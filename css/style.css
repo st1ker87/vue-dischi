@@ -2,4 +2,52 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
+
+.header {
+    height: 70px;
+    line-height: 70px;
+    vertical-align: middle;
+    background-color: #2E3A46;
+}
+
+.header img {
+    height: 50px;
+    margin: 10px 20px;
+}
+
+.body {
+    height: calc(100vh - 70px);
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #1E2D3B;
+    overflow-y: auto;
+}
+
+.body .album {
+    min-height: 300px;
+    width: 150px;
+    display: table;
+    padding: 10px;
+    background-color: #2E3A46;
+    margin: 20px;
+    text-align: center;
+}
+.body .album img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.body .album p {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+.authYear {
+    color: grey;
+    font-size: 0.8em;
+}
+

@@ -8,12 +8,27 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Vue Spotify Dischi</title>
 </head>
 
 <body>
     <div id="root">
-    
+        <div class="header">
+            <img src="img/Spotify_logo.png" alt="">
+        </div>
+        <div class="body">
+            <div v-for="album in albums" class="album">
+                <img :src="album.poster" alt="album poster">
+                <p>{{album.title}}</p>
+                <div class="authYear">
+                    {{album.author}}<br/>
+                    {{album.year}}
+                </div>
+            </div>
+
+        </div>
+        
+
 
     </div>
     <script src="js/root.js"></script>
